@@ -74,7 +74,7 @@ const Portfolio = () => {
     lg:pt-[3rem] lg:px-[5vw] lg:h-[35rem]
     md:pt-[2rem] md:px-[4rem] md:h-[30rem] 
     pt-[2rem] px-[1rem]
-    relative h-[32rem] w-full
+    relative h-[25rem] w-full
     flex flex-col items-start
     text-left
   "
