@@ -56,7 +56,7 @@ const Portfolio = () => {
   return (
     <div className="lg:mx-[9rem] 
     md:mx-[7rem] md:mb-[4rem] 
-    mx-[5rem] mb-[2rem] bg-highlight2 relative flex-1 z-20">
+    mx-[5rem] mb-[1rem] bg-highlight2 relative flex-1 z-20">
       <div className="flex flex-col lg:flex-row">
   {/* PHOTO */}
   <div className="flex-shrink-0">
@@ -74,7 +74,7 @@ const Portfolio = () => {
     lg:pt-[3rem] lg:px-[5vw] lg:h-[35rem]
     md:pt-[2rem] md:px-[4rem] md:h-[30rem] 
     pt-[2rem] px-[1rem]
-    relative h-[28rem] w-full
+    relative h-[32rem] w-full
     flex flex-col items-start
     text-left
   "
@@ -102,7 +102,8 @@ const Portfolio = () => {
       <div className="flex gap-2">
               {/* See More Button */}
       <button
-        className="mt-[1rem] px-[1rem] py-[1rem] text-intro bg-highlight1 text-white mt-[1rem] px-[1rem] py-[1rem] font-inter font-bold"
+        className="md:mt-[2rem] md:px-[2rem] md:py-[1rem]
+        mt-[0.5rem] px-[0.5rem] py-[0.5rem] text-intro bg-highlight1 text-white font-inter font-bold"
         onClick={() => window.open("https://github.com/Cristopher-Artacho-WVSU", "_blank")}
       >
         See More
@@ -115,14 +116,15 @@ const Portfolio = () => {
         {projects.map((_, idx) => (
           <div
             key={idx}
-            className={`w-[1rem] h-[1rem] rounded-full ${
+            className={` md:w-[1rem] md:h-[1rem] w-[0.5rem] h-[0.5rem] rounded-full ${
               idx === currentIndex ? "bg-object1" : "bg-gray-400"
             }`}
           />
         ))}
       </div>
 
-        <button className="mt-[1rem] px-[1rem] py-[1rem] text-intro bg-highlight1 text-white mt-[1rem] px-[1rem] py-[1rem] font-inter font-bold " onClick={nextSlide}>
+        <button className=" md:mt-[2rem] md:px-[2rem] md:py-[1rem]
+        mt-[0.5rem] px-[0.5rem] py-[0.5rem] text-intro bg-highlight1 text-white font-inter font-bold " onClick={nextSlide}>
           Next
         </button>
     </div>
