@@ -56,7 +56,7 @@ const Portfolio = () => {
   return (
     <div className="lg:mx-[9rem] 
     md:mx-[7rem] md:mb-[4rem] 
-    mx-[2rem] mb-[3rem] bg-highlight2 relative flex-1 z-20">
+    mx-[2rem] mb-[8rem] bg-highlight2 relative flex-1 z-20">
       <div className="flex flex-col lg:flex-row">
   {/* PHOTO */}
   <div className="flex-shrink-0">
