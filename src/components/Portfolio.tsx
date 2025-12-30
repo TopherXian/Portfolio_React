@@ -74,7 +74,7 @@ const Portfolio = () => {
     lg:pt-[3rem] lg:px-[5vw] lg:h-[35rem]
     md:pt-[2rem] md:px-[4rem] md:h-[30rem] 
     pt-[2rem] px-[1rem]
-    relative h-[20rem] w-full
+    relative h-[25rem] w-full
     flex flex-col items-start
     text-left
   "
@@ -97,7 +97,7 @@ const Portfolio = () => {
     {/* SLIDER / CONTROLS */}
     <div className="md:mt-[2rem]
 
-    pb-[3rem] flex justify-between items-center  w-full">
+    pb-[1rem] flex justify-between items-center  w-full">
       {/* Navigation buttons */}
       <div className="flex gap-2">
               {/* See More Button */}

@@ -111,7 +111,6 @@ const Homepage = () => {
           <div className="xl:pt-[6rem] xl:gap-[18rem]
           lg:pt-[6rem] lg:gap-[6rem] lg:flex-row
           md:pt-[6rem] md:gap-[6rem] md:flex-row md:px-[0rem]
-          
           pt-[3rem] py-[5rem] px-[5rem] relative pt-[1rem] gap-[1rem] pb-[4rem] flex flex-col items-center
            ">
             {/* EXPERTISE */}
@@ -122,42 +121,42 @@ const Homepage = () => {
               <p className="xl:pl-[5rem] xl:text-xl_heading
               lg:pl-[5rem] lg:text-lg_heading
               md:pl-[3rem] md:text-md_heading
-              pl-[2rem] text-sm_heading
+              text-sm_heading
             font-bold">Website Development</p>
             <p className="xl:pl-[5rem] xl:text-xl_content
             lg:pl-[5rem] lg:text-lg_content
             md:pl-[3rem] md:text-md_content
-            pl-[2rem] text-sm_content">
+            text-sm_content">
               TailwindCSS, MongoDB, React, NodeJS, Firebase
             </p>
               <p className="xl:pl-[5rem] xl:text-xl_heading
               lg:pl-[5rem] lg:text-lg_heading
               md:pl-[3rem] md:text-md_heading
-              pl-[2rem] text-sm_heading
+              text-sm_heading
             font-bold">Game Development</p>
             <p className="xl:pl-[5rem] xl:text-xl_content
             lg:pl-[5rem] lg:text-lg_content
             md:pl-[3rem] md:text-md_content
-            pl-[2rem] text-sm_content">
+            text-sm_content">
               Godot, Unreal Engine 5, RPG Maker
             </p>
               <p className="xl:pl-[5rem] xl:text-xl_content
               xl:pl-[5rem] xl:text-xl_heading
               lg:pl-[5rem] lg:text-lg_heading
               md:pl-[3rem] md:text-md_heading
-              pl-[2rem] text-sm_heading
+              text-sm_heading
             font-bold">Computer Scientist</p>
             <p className="xl:pl-[5rem] xl:text-xl_content
             lg:pl-[5rem] lg:text-lg_content
             md:pl-[3rem] md:text-md_content
-            pl-[2rem] text-sm_content">
+            text-sm_content">
               AI & ML using Python, Java and C++, Arduino
             </p>
             </div>
             {/* DESCRIPTION */}
           <div className="
-          md:text-left md:order-2
-          order-1 text-center relative pr-[1rem]">
+          md:text-left md:order-2 md:pr-[1rem]
+          order-1 text-center relative ">
             <p className="xl:text-xl_section
             lg:text-lg_section
             md:text-md_section
@@ -218,7 +217,7 @@ const Homepage = () => {
           <div className=" xl:pt-[1rem] xl:px-[5rem]
           lg:pt-[1rem] lg:px-[4rem]
           md:pt-[3rem] md:px-[3rem] md:text-left
-          pt-[2rem] px-[5rem] text-center
+          pt-[2rem] px-[1rem] text-center
 
           relative h-full w-full flex flex-col justify-center ">
             <p className=" xl:text-xl_section 
