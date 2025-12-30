@@ -19,10 +19,16 @@ const Portfolio = () => {
     const fetchProjects = async () => {
       try {
         const querySnapshot = await getDocs(collection(db, "projects"));
-        let projectsData = querySnapshot.docs.map((doc) => ({
-          id: doc.id,
-          ...doc.data(),
-        }));
+        let projectsData: Project[] = querySnapshot.docs.map((doc) => {
+          const data = doc.data();
+          return {
+            id: doc.id,
+            title: data.title ?? "",
+            description: data.description ?? "",
+            imageURL: data.imageURL ?? "",
+            link: data.link ?? "",
+          };
+        });
 
         // Randomize and pick up to 4 projects
         projectsData = projectsData.sort(() => 0.5 - Math.random()).slice(0, 4);
@@ -85,7 +91,7 @@ const Portfolio = () => {
               {/* See More Button */}
       <button
         className="px-4 py-2 bg-highlight1 text-white font-inter rounded"
-        onClick={() => window.open(project.link, "_blank")}
+        onClick={() => window.open("https://github.com/TopherXian", "_blank")}
       >
         See More
       </button>
