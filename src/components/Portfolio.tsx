@@ -2,8 +2,16 @@ import { useEffect, useState } from "react";
 import { collection, getDocs } from "firebase/firestore";
 import { db } from "../firebase";
 
+interface Project {
+  id: string;
+  title: string;
+  description: string;
+  imageURL: string;
+}
+
+
 const Portfolio = () => {
-  const [projects, setProjects] = useState([]);
+  const [projects, setProjects] = useState<Project[]>([]);
   const [currentIndex, setCurrentIndex] = useState(0);
   const [loading, setLoading] = useState(true);
 
@@ -32,10 +40,6 @@ const Portfolio = () => {
 
   const nextSlide = () => {
     setCurrentIndex((prev) => (prev + 1) % projects.length);
-  };
-
-  const prevSlide = () => {
-    setCurrentIndex((prev) => (prev - 1 + projects.length) % projects.length);
   };
 
   if (loading) return <p>Loading projects...</p>;
