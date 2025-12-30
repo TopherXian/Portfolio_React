@@ -54,12 +54,16 @@ const Portfolio = () => {
   const project = projects[currentIndex];
 
   return (
-    <div className="lg:mx-[9rem] md:mx-[7rem] md:mb-[4rem] sm:mx-[5rem] sm:mb-[4rem] bg-highlight2 relative flex-1 z-20">
+    <div className="lg:mx-[9rem] 
+    md:mx-[7rem] md:mb-[4rem] 
+    mx-[5rem] mb-[4rem] bg-highlight2 relative flex-1 z-20">
       <div className="flex flex-col lg:flex-row">
   {/* PHOTO */}
   <div className="flex-shrink-0">
     <div
-      className="lg:w-[35rem] lg:max-w-[28rem] lg:aspect-[3/4] md:w-[35vw] md:max-w-[28rem] md:aspect-[3/4] sm:w-[35vw] sm:max-w-[28rem] sm:aspect-[2/4] bg-center bg-cover"
+      className="lg:w-[35rem] lg:max-w-[28rem] lg:aspect-[3/4] 
+      md:w-[100%] md:aspect-[10/4] 
+      w-[100%] aspect-[10/4] bg-center bg-cover"
       style={{ backgroundImage: `url(portfolio/${project.imageURL})` }}
     />
   </div>
@@ -67,31 +71,39 @@ const Portfolio = () => {
   {/* DESCRIPTION + SLIDER */}
 <div
   className="
-    lg:pt-[3rem] lg:px-[5vw]
-    md:pt-[2.5rem] md:px-[4rem]
-    sm:pt-[2rem] sm:px-[1rem]
-    relative h-[35rem] w-full
+    lg:pt-[3rem] lg:px-[5vw] lg:h-[35rem]
+    md:pt-[2rem] md:px-[4rem] md:h-[30rem] 
+    pt-[2rem] px-[1rem]
+    relative h-[20rem] w-full
     flex flex-col items-start
     text-left
   "
 >
 {/* TITLE */}
-  <p className="xl:text-xl_heading lg:text-lg_heading md:text-md_heading sm:text-sm_heading font-raleway font-bold">
+  <p className="xl:text-xl_heading 
+  lg:text-lg_heading 
+  md:text-md_heading 
+  text-sm_heading font-raleway font-bold">
     {project.title}
   </p>
 {/* DESCRIPTION */}
-  <p className="xl:text-lg_content xl:mt-[1rem] lg:text-lg_content lg:mt-[1rem] md:text-md_content md:mt-[1rem] sm:text-sm_content sm:mt-[1rem] font-inter overflow-y-auto flex-1">
+  <p className="xl:text-lg_content xl:mt-[1rem] 
+  lg:text-lg_content lg:mt-[1rem] 
+  md:text-md_content md:mt-[1rem] 
+  text-sm_content mt-[1rem] font-inter overflow-y-auto flex-1">
     {project.description}
   </p>
 
     {/* SLIDER / CONTROLS */}
-    <div className="flex justify-between items-center mt-4 w-full">
+    <div className="md:mt-[2rem]
+
+    pb-[3rem] flex justify-between items-center  w-full">
       {/* Navigation buttons */}
       <div className="flex gap-2">
               {/* See More Button */}
       <button
-        className="px-4 py-2 bg-highlight1 text-white font-inter rounded"
-        onClick={() => window.open("https://github.com/TopherXian", "_blank")}
+        className="mt-[1rem] px-[1rem] py-[1rem] text-intro bg-highlight1 text-white mt-[1rem] px-[1rem] py-[1rem] font-inter font-bold"
+        onClick={() => window.open("https://github.com/Cristopher-Artacho-WVSU", "_blank")}
       >
         See More
       </button>
@@ -110,7 +122,7 @@ const Portfolio = () => {
         ))}
       </div>
 
-        <button className="px-3 py-1 bg-highlight1 text-white rounded" onClick={nextSlide}>
+        <button className="mt-[1rem] px-[1rem] py-[1rem] text-intro bg-highlight1 text-white mt-[1rem] px-[1rem] py-[1rem] font-inter font-bold " onClick={nextSlide}>
           Next
         </button>
     </div>

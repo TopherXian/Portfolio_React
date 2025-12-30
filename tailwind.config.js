@@ -30,9 +30,9 @@ export default {
         md_content: "17px",
         md_intro: "16px",
         md_section: "36px",
-        sm_heading2: "20px",
-        sm_heading: "24px",
-        sm_content: "16px",
+        sm_heading2: "18px",
+        sm_heading: "20px",
+        sm_content: "15px",
         sm_intro: "14px",
         sm_section: "30px",
 
