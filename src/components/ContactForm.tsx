@@ -4,7 +4,7 @@ import emailjs from "@emailjs/browser";
 const ContactForm = () => {
     console.log(emailjs)
     console.log(import.meta.env.VITE_EMAILJS_SERVICE_ID);
-  const form = useRef(null);
+  const form = useRef<HTMLFormElement | null>(null);
 
   const [loading, setLoading] = useState(false);
   const [formData, setFormData] = useState({
